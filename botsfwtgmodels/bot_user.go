@@ -1,18 +1,19 @@
 package botsfwtgmodels
 
 import (
-	"github.com/bots-go-framework/bots-fw/botsfw"
+	"github.com/bots-go-framework/bots-fw-models/botsfwmodels"
 	"github.com/strongo/app/user"
 )
 
 // TgBotUserData is Telegram user DB TgChatData (without ID)
 type TgBotUserData struct {
-	botsfw.BotUserData
+	botsfwmodels.BotUserData
 	//TgChatID int64
 }
 
-var _ botsfw.BotUser = (*TgBotUserData)(nil)
-var _ user.AccountData = (*TgBotUserData)(nil)
+var _ botsfwmodels.BotUser = (*TgBotUserData)(nil)
+
+//var _ user.AccountData = (*TgBotUserData)(nil)
 
 //// TgUser is Telegram user DB record (with ID)
 //type TgUser struct {

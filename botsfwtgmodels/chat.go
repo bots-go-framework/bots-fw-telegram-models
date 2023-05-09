@@ -4,7 +4,7 @@ package botsfwtgmodels
 type TgChatData interface {
 
 	// BaseChatData returns a base struct that should be included in all structs that implement TgChatData.
-	BaseChatData() *TgChatBase
+	BaseTgChatData() *TgChatBase
 
 	GetTgChatInstanceID() string
 

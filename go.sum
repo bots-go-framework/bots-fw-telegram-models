@@ -1,5 +1,7 @@
 github.com/bots-go-framework/bots-fw-models v0.0.2 h1:q/3LxzoDqYWYG4SlSC1yG1vbn+UPdIS9zvbi5OIn1Bw=
 github.com/bots-go-framework/bots-fw-models v0.0.2/go.mod h1:WVRrEFrKnkjSe9M/QzfEZBhMCzt9LQtJKdFE2fo345s=
+github.com/bots-go-framework/bots-fw-store v0.0.4 h1:oLj6j2TQjG8WWQaz/OxFMAWRojRzX/q1Wv0pr+UhFhg=
+github.com/bots-go-framework/bots-fw-store v0.0.4/go.mod h1:afElYDog6nZQ6f8kJxq9rhmjBFvZQCuAIOecnQFNqaU=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/stretchr/testify v1.8.2 h1:+h33VjcLVPDHtOdpUCuF+7gSuG3yGIftsP1YvFihtJ8=

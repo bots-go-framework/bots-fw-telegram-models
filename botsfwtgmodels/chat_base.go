@@ -2,10 +2,8 @@ package botsfwtgmodels
 
 import (
 	"fmt"
-	"github.com/bots-go-framework/bots-fw-models/botsfwmodels"
-	"github.com/strongo/app/user"
+	"github.com/bots-go-framework/bots-fw-store/botsfwmodels"
 	"strconv"
-	"time"
 )
 
 // TgChatRecord holds base properties of Telegram chat TgChatData
@@ -25,10 +23,11 @@ func getChatID(tgBotID string, tgChatID int64) string {
 }
 
 var _ TgChatData = (*TgChatBase)(nil)
+var _ botsfwmodels.BotChat = (*TgChatBase)(nil)
 
 // TgChatBase holds base properties of Telegram chat TgChatData
 type TgChatBase struct {
-	botsfwmodels.BotChatData
+	botsfwmodels.BotChatBaseData
 	UserGroupID           string  `datastore:",index,omitempty" firestore:",omitempty" dalgo:",index,omitempty"` // Do index
 	TelegramUserID        int64   `datastore:",noindex,omitempty" firestore:",noindex,omitempty"`
 	TelegramUserIDs       []int64 `datastore:",noindex" firestore:",noindex"` // For groups
@@ -36,7 +35,11 @@ type TgChatBase struct {
 	TgChatInstanceID      string  // !DO index! // TODO: document what is chat instance and why we need to keep id of it
 }
 
-func (data *TgChatBase) BaseChatData() *TgChatBase {
+func (data *TgChatBase) Base() *botsfwmodels.BotChatBaseData {
+	return &data.BotChatBaseData
+}
+
+func (data *TgChatBase) BaseTgChatData() *TgChatBase {
 	return data
 }
 
@@ -57,11 +60,13 @@ func (data *TgChatBase) GetPreferredLanguage() string {
 
 var _ botsfwmodels.BotChat = (*TgChatBase)(nil)
 
-// NewTelegramChatEntity create new telegram chat TgChatData
-func NewTelegramChatEntity() *TgChatBase {
+// NewTelegramChatBaseData create new telegram chat TgChatData
+func NewTelegramChatBaseData() *TgChatBase {
 	return &TgChatBase{
-		BotChatData: botsfwmodels.BotChatData{
-			BotEntity: botsfwmodels.BotEntity{OwnedByUserWithID: user.NewOwnedByUserWithIntID(0, time.Now())},
+		BotChatBaseData: botsfwmodels.BotChatBaseData{
+			BotBaseData: botsfwmodels.BotBaseData{
+				//OwnedByUserWithID: user.NewOwnedByUserWithIntID(0, time.Now()),
+			},
 		},
 	}
 }

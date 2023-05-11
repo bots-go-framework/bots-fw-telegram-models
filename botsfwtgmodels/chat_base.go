@@ -23,11 +23,11 @@ func getChatID(tgBotID string, tgChatID int64) string {
 }
 
 var _ TgChatData = (*TgChatBase)(nil)
-var _ botsfwmodels.BotChat = (*TgChatBase)(nil)
+var _ botsfwmodels.ChatData = (*TgChatBase)(nil)
 
 // TgChatBase holds base properties of Telegram chat TgChatData
 type TgChatBase struct {
-	botsfwmodels.BotChatBaseData
+	botsfwmodels.ChatBaseData
 	UserGroupID           string  `datastore:",index,omitempty" firestore:",omitempty" dalgo:",index,omitempty"` // Do index
 	TelegramUserID        int64   `datastore:",noindex,omitempty" firestore:",noindex,omitempty"`
 	TelegramUserIDs       []int64 `datastore:",noindex" firestore:",noindex"` // For groups
@@ -35,8 +35,8 @@ type TgChatBase struct {
 	TgChatInstanceID      string  // !DO index! // TODO: document what is chat instance and why we need to keep id of it
 }
 
-func (data *TgChatBase) Base() *botsfwmodels.BotChatBaseData {
-	return &data.BotChatBaseData
+func (data *TgChatBase) Base() *botsfwmodels.ChatBaseData {
+	return &data.ChatBaseData
 }
 
 func (data *TgChatBase) BaseTgChatData() *TgChatBase {
@@ -58,12 +58,12 @@ func (data *TgChatBase) GetPreferredLanguage() string {
 	return data.PreferredLanguage
 }
 
-var _ botsfwmodels.BotChat = (*TgChatBase)(nil)
+var _ botsfwmodels.ChatData = (*TgChatBase)(nil)
 
 // NewTelegramChatBaseData create new telegram chat TgChatData
 func NewTelegramChatBaseData() *TgChatBase {
 	return &TgChatBase{
-		BotChatBaseData: botsfwmodels.BotChatBaseData{
+		ChatBaseData: botsfwmodels.ChatBaseData{
 			BotBaseData: botsfwmodels.BotBaseData{
 				//OwnedByUserWithID: user.NewOwnedByUserWithIntID(0, time.Now()),
 			},

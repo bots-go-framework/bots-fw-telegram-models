@@ -2,7 +2,7 @@ module github.com/bots-go-framework/bots-fw-telegram-models
 
 go 1.20
 
-//replace github.com/bots-go-framework/bots-fw-store => ../bots-fw-store
+replace github.com/bots-go-framework/bots-fw-store => ../bots-fw-store
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.0.4

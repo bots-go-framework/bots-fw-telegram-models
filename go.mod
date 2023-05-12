@@ -8,3 +8,5 @@ require (
 	github.com/bots-go-framework/bots-fw-store v0.0.4
 	github.com/strongo/app v0.4.0
 )
+
+require github.com/strongo/validation v0.0.1 // indirect

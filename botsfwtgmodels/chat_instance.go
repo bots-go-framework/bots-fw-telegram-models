@@ -12,8 +12,8 @@ var _ TgChatInstanceData = (*TgChatInstanceBaseData)(nil)
 
 // TgChatInstanceBaseData is base struct for storing data related to a Telegram chat instance
 type TgChatInstanceBaseData struct {
-	TgChatID          int64  `dalgo:",noindex" datastore:",noindex" firestore:",noindex"`
-	PreferredLanguage string `dalgo:",noindex" datastore:",noindex" firestore:",noindex"`
+	TgChatID          int64  `dalgo:",noindex" datastore:",noindex"`
+	PreferredLanguage string `dalgo:",noindex" datastore:",noindex"`
 }
 
 func (v *TgChatInstanceBaseData) Validate() error {

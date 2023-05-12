@@ -6,7 +6,7 @@ import (
 )
 
 type TgBotUser interface {
-	botsfwmodels.BotUser
+	botsfwmodels.BotUserData
 	TgBotUserBaseData() *TgBotUserBaseData
 }
 

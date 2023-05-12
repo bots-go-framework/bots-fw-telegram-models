@@ -25,14 +25,24 @@ func getChatID(tgBotID string, tgChatID int64) string {
 var _ TgChatData = (*TgChatBaseData)(nil)
 var _ botsfwmodels.ChatData = (*TgChatBaseData)(nil)
 
-// TgChatBase holds base properties of Telegram chat TgChatData
+// TgChatBaseData holds base properties of Telegram chat TgChatData
 type TgChatBaseData struct {
 	botsfwmodels.ChatBaseData
-	UserGroupID           string  `datastore:",index,omitempty" firestore:",omitempty" dalgo:",index,omitempty"` // Do index
-	TelegramUserID        int64   `datastore:",noindex,omitempty" firestore:",omitempty"`
-	TelegramUserIDs       []int64 `datastore:",noindex"` // For groups
-	LastProcessedUpdateID int     `datastore:",noindex,omitempty" firestore:",omitempty"`
-	TgChatInstanceID      string  // !DO index! // TODO: document what is chat instance and why we need to keep id of it
+
+	// UserGroupID TODO: needs documentation what is it and intended usage
+	UserGroupID string `datastore:",index,omitempty" firestore:",omitempty" dalgo:",index,omitempty"` // Do index
+
+	// TelegramUserID is ID of user in Telegram. It is not ID of user in our app.
+	// Deprecated: use botsfwmodels.ChatBaseData.BotUserID instead
+	TelegramUserID int64 `datastore:",noindex,omitempty" firestore:",omitempty"`
+
+	// TelegramUserIDs is a list of IDs of users in Telegram. It is not ID of user in our app.
+	// Deprecated: use botsfwmodels.ChatBaseData.BotUserIDs instead
+	TelegramUserIDs []int64 `datastore:",noindex"` // For groups
+
+	LastProcessedUpdateID int `datastore:",noindex,omitempty" firestore:",omitempty"`
+
+	TgChatInstanceID string // !DO index! // TODO: document what is chat instance and why we need to keep id of it
 }
 
 func (data *TgChatBaseData) Base() *botsfwmodels.ChatBaseData {

@@ -18,9 +18,9 @@ import (
 //	v.Key = dal.NewKeyWithID(TgChatCollection, v.ID)
 //}
 
-func getChatID(tgBotID string, tgChatID int64) string {
-	return fmt.Sprintf("%s:%d", tgBotID, tgChatID) // TODO: Should we migrate to format "id@bot"?
-}
+//func getChatID(tgBotID string, tgChatID int64) string {
+//	return fmt.Sprintf("%s:%d", tgBotID, tgChatID) // TODO: Should we migrate to format "id@bot"?
+//}
 
 var _ TgChatData = (*TgChatBaseData)(nil)
 var _ botsfwmodels.ChatData = (*TgChatBaseData)(nil)

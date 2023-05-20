@@ -5,9 +5,9 @@ go 1.20
 //replace github.com/bots-go-framework/bots-fw-store => ../bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw-store v0.0.6
-	github.com/stretchr/testify v1.8.2
-	github.com/strongo/app v0.4.0
+	github.com/bots-go-framework/bots-fw-store v0.0.7
+	github.com/stretchr/testify v1.8.3
+	github.com/strongo/app v0.4.1
 )
 
 require (

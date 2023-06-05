@@ -6,8 +6,8 @@ go 1.20
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.0.7
-	github.com/stretchr/testify v1.8.3
-	github.com/strongo/app v0.5.5
+	github.com/stretchr/testify v1.8.4
+	github.com/strongo/app v0.5.7
 )
 
 require (

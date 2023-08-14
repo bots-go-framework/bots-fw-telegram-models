@@ -23,7 +23,7 @@ import (
 //}
 
 var _ TgChatData = (*TgChatBaseData)(nil)
-var _ botsfwmodels.ChatData = (*TgChatBaseData)(nil)
+var _ botsfwmodels.BotChatData = (*TgChatBaseData)(nil)
 
 // TgChatBaseData holds base properties of Telegram chat TgChatData
 type TgChatBaseData struct {
@@ -72,7 +72,7 @@ func (data *TgChatBaseData) GetPreferredLanguage() string {
 	return data.PreferredLanguage
 }
 
-var _ botsfwmodels.ChatData = (*TgChatBaseData)(nil)
+var _ botsfwmodels.BotChatData = (*TgChatBaseData)(nil)
 
 // NewTelegramChatBaseData create new telegram chat TgChatData
 func NewTelegramChatBaseData() *TgChatBaseData {

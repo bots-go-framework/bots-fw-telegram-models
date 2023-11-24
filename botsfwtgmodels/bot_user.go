@@ -2,7 +2,7 @@ package botsfwtgmodels
 
 import (
 	"github.com/bots-go-framework/bots-fw-store/botsfwmodels"
-	"github.com/strongo/app/user"
+	"github.com/strongo/strongoapp/appuser"
 )
 
 type TgBotUser interface {
@@ -53,8 +53,8 @@ func (entity *TgBotUserBaseData) Name() string {
 }
 
 // GetNames return user names
-func (entity *TgBotUserBaseData) GetNames() user.Names {
-	return user.Names{
+func (entity *TgBotUserBaseData) GetNames() appuser.NameFields {
+	return appuser.NameFields{
 		FirstName: entity.FirstName,
 		LastName:  entity.LastName,
 		NickName:  entity.UserName,

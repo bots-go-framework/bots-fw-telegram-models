@@ -9,7 +9,7 @@ toolchain go1.21.4
 require (
 	github.com/bots-go-framework/bots-fw-store v0.1.2
 	github.com/stretchr/testify v1.8.4
-	github.com/strongo/app v0.5.7
+	github.com/strongo/strongoapp v0.9.1
 )
 
 require (

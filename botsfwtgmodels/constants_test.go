@@ -1,16 +1,19 @@
 package botsfwtgmodels
 
 import (
-	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
 )
 
 func TestConstants(t *testing.T) {
 	t.Run("BotUserCollection", func(t *testing.T) {
-		assert.False(t, strings.TrimSpace(BotUserCollection) == "", "BotUserCollection is empty")
+		if strings.TrimSpace(BotUserCollection) == "" {
+			t.Error("BotUserCollection is empty")
+		}
 	})
 	t.Run("TgChatCollection", func(t *testing.T) {
-		assert.False(t, strings.TrimSpace(TgChatCollection) == "", "TgChatCollection is empty")
+		if strings.TrimSpace(TgChatCollection) == "" {
+			t.Error("TgChatCollection is empty")
+		}
 	})
 }

@@ -35,7 +35,7 @@ func (*TgBotUserBaseData) GetEmail() string {
 	return ""
 }
 
-// Name returns full display name cmbined from (first+last, nick) name
+// Name returns full display name combined from (first+last, nick) name
 func (entity *TgBotUserBaseData) Name() string {
 	if entity.FirstName == "" && entity.LastName == "" {
 		return "@" + entity.UserName
@@ -57,7 +57,7 @@ func (entity *TgBotUserBaseData) GetNames() appuser.NameFields {
 	return appuser.NameFields{
 		FirstName: entity.FirstName,
 		LastName:  entity.LastName,
-		NickName:  entity.UserName,
+		UserName:  entity.UserName,
 	}
 }
 

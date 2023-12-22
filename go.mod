@@ -8,7 +8,11 @@ toolchain go1.21.4
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.4.0
-	github.com/strongo/strongoapp v0.12.0
+	github.com/strongo/strongoapp v0.15.0
 )
 
-require github.com/strongo/validation v0.0.6 // indirect
+require (
+	github.com/alexsergivan/transliterator v1.0.0 // indirect
+	github.com/strongo/random v0.0.1 // indirect
+	github.com/strongo/validation v0.0.6 // indirect
+)

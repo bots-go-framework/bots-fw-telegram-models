@@ -49,9 +49,9 @@ func (data *TgChatBaseData) Base() *botsfwmodels.ChatBaseData {
 	return &data.ChatBaseData
 }
 
-func (data *TgChatBaseData) ChatKey() botsfwmodels.ChatKey {
-	return data.ChatBaseData.ChatKey
-}
+//func (data *TgChatBaseData) ChatKey() botsfwmodels.ChatKey {
+//	return data.ChatBaseData.ChatKey
+//}
 
 func (data *TgChatBaseData) BaseTgChatData() *TgChatBaseData {
 	return data

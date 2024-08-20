@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/bots-go-framework/bots-fw-store/botsfwmodels"
 	"slices"
+	"strconv"
 )
 
 // TgChatRecord holds base properties of Telegram chat TgChatData
@@ -87,16 +88,23 @@ func (data *TgChatBaseData) SetAppUserID(appUserID string) {
 
 // SetBotUserID sets bot user int ID
 func (data *TgChatBaseData) SetBotUserID(id interface{}) {
-	switch id := id.(type) {
+	var botUserID string
+	switch typedID := id.(type) {
 	case string:
-		data.BotUserID = id
-	case int, int64:
-		data.BotUserID = fmt.Sprintf("%d", id)
+		botUserID = typedID
+	case int:
+		botUserID = strconv.Itoa(typedID)
+	case int64:
+		botUserID = strconv.FormatInt(typedID, 10)
 	default:
 		panic(fmt.Sprintf("Expected string or int, got: %T=%v", id, id))
 	}
-	if data.IsGroup && !slices.Contains(data.BotUserIDs, data.BotUserID) {
-		data.BotUserIDs = append(data.BotUserIDs, data.BotUserID)
+	if data.IsGroup {
+		if !slices.Contains(data.BotUserIDs, botUserID) {
+			data.BotUserIDs = append(data.BotUserIDs, botUserID)
+		}
+	} else {
+		data.BotUserIDs = []string{botUserID}
 	}
 }
 

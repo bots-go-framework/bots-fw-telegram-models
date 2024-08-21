@@ -5,5 +5,5 @@ import (
 )
 
 func TestTelegramUser(t *testing.T) {
-	//var _ datastore.PropertyLoadSaver = (*TgBotUserBaseData)(nil)
+	//var _ datastore.PropertyLoadSaver = (*TgPlatformUserBaseDbo)(nil)
 }

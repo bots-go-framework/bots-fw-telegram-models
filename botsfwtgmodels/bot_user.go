@@ -5,38 +5,38 @@ import (
 	"github.com/strongo/strongoapp/person"
 )
 
-type TgBotUser interface {
-	botsfwmodels.BotUserData
-	TgBotUserBaseData() *TgBotUserBaseData
+type TgPlatformUser interface {
+	botsfwmodels.PlatformUserData
+	TgPlatformUserBaseDbo() *TgPlatformUserBaseDbo
 }
 
-var _ TgBotUser = (*TgBotUserBaseData)(nil)
+var _ TgPlatformUser = (*TgPlatformUserBaseDbo)(nil)
 
-// TgBotUserBaseData is Telegram user DB TgChatData (without ID)
-type TgBotUserBaseData struct {
-	botsfwmodels.BotUserBaseData
+// TgPlatformUserBaseDbo is Telegram user DB TgChatData (without ID)
+type TgPlatformUserBaseDbo struct {
+	botsfwmodels.PlatformUserBaseDbo
 	//TgChatID int64
 }
 
-func (entity *TgBotUserBaseData) TgBotUserBaseData() *TgBotUserBaseData {
+func (entity *TgPlatformUserBaseDbo) TgPlatformUserBaseDbo() *TgPlatformUserBaseDbo {
 	return entity
 }
 
-//var _ user.AccountData = (*TgBotUserBaseData)(nil)
+//var _ user.AccountData = (*TgPlatformUserBaseDbo)(nil)
 
 //// TgUser is Telegram user DB record (with ID)
 //type TgUser struct {
 //	record.WithID[int64]
-//	Data *TgBotUserBaseData
+//	Data *TgPlatformUserBaseDbo
 //}
 
 // GetEmail returns empty string
-func (*TgBotUserBaseData) GetEmail() string {
+func (*TgPlatformUserBaseDbo) GetEmail() string {
 	return ""
 }
 
 // Name returns full display name combined from (first+last, nick) name
-func (entity *TgBotUserBaseData) Name() string {
+func (entity *TgPlatformUserBaseDbo) Name() string {
 	if entity.FirstName == "" && entity.LastName == "" {
 		return "@" + entity.UserName
 	}
@@ -53,7 +53,7 @@ func (entity *TgBotUserBaseData) Name() string {
 }
 
 // GetNames return user names
-func (entity *TgBotUserBaseData) GetNames() person.NameFields {
+func (entity *TgPlatformUserBaseDbo) GetNames() person.NameFields {
 	return person.NameFields{
 		FirstName: entity.FirstName,
 		LastName:  entity.LastName,
@@ -62,17 +62,17 @@ func (entity *TgBotUserBaseData) GetNames() person.NameFields {
 }
 
 // IsEmailConfirmed returns false
-func (entity *TgBotUserBaseData) IsEmailConfirmed() bool {
+func (entity *TgPlatformUserBaseDbo) IsEmailConfirmed() bool {
 	return false
 }
 
 //// Load is for datastore
-//func (entity *TgBotUserBaseData) Load(ps []datastore.Property) error {
+//func (entity *TgPlatformUserBaseDbo) Load(ps []datastore.Property) error {
 //	return datastore.LoadStruct(entity, ps)
 //}
 //
 //// Save is for datastore
-//func (entity *TgBotUserBaseData) Save() (properties []datastore.Property, err error) {
+//func (entity *TgPlatformUserBaseDbo) Save() (properties []datastore.Property, err error) {
 //	if properties, err = datastore.SaveStruct(entity); err != nil {
 //		return properties, err
 //	}

@@ -1,6 +1,6 @@
 module github.com/bots-go-framework/bots-fw-telegram-models
 
-go 1.21
+go 1.23
 
 toolchain go1.23.0
 
@@ -8,7 +8,7 @@ toolchain go1.23.0
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.7.0
-	github.com/strongo/strongoapp v0.20.0
+	github.com/strongo/strongoapp v0.20.1
 )
 
 require (

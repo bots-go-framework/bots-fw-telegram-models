@@ -6,7 +6,7 @@ go 1.22
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.8.2
-	github.com/strongo/strongoapp v0.25.2
+	github.com/strongo/strongoapp v0.25.4
 )
 
 require (

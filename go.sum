@@ -8,6 +8,8 @@ github.com/bots-go-framework/bots-fw-store v0.10.1 h1:z82JwkYNJwb9i+AvzEuc57rfj6
 github.com/bots-go-framework/bots-fw-store v0.10.1/go.mod h1:7oU4B8j5HuJZM8AftosbyQD+AqckXsDv8eU1auGPzn8=
 github.com/bots-go-framework/bots-fw-store v0.10.2 h1:Dmy5tnAz7FqkO97ORQlB0ebAG1zCbUtmynQ81Nv67pw=
 github.com/bots-go-framework/bots-fw-store v0.10.2/go.mod h1:IvneIukN4DJVHmvJ+6V6Bx6KdA2iUO+bwnoA7rUJJfE=
+github.com/bots-go-framework/bots-fw-store v0.10.3 h1:nGw1puS+wzI5XAnNyUBFerbaqxAT9sxCMs4ESq+kH9Y=
+github.com/bots-go-framework/bots-fw-store v0.10.3/go.mod h1:s5L7PAMhdpf+zqkewV5m4uQKm/oVtv4QNyhdkSmNJwE=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

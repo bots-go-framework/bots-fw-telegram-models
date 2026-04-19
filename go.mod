@@ -8,7 +8,7 @@ toolchain go1.26.2
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.10.3
-	github.com/strongo/strongoapp v0.31.24
+	github.com/strongo/strongoapp v0.31.25
 )
 
 require (

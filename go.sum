@@ -12,6 +12,8 @@ github.com/bots-go-framework/bots-fw-store v0.10.3 h1:nGw1puS+wzI5XAnNyUBFerbaqx
 github.com/bots-go-framework/bots-fw-store v0.10.3/go.mod h1:s5L7PAMhdpf+zqkewV5m4uQKm/oVtv4QNyhdkSmNJwE=
 github.com/bots-go-framework/bots-fw-store v0.10.4 h1:4vD+IvBDITQgwBob1PCG6cGNJJWKQi2oGYHNE9FGIBw=
 github.com/bots-go-framework/bots-fw-store v0.10.4/go.mod h1:s5L7PAMhdpf+zqkewV5m4uQKm/oVtv4QNyhdkSmNJwE=
+github.com/bots-go-framework/bots-fw-store v0.10.5 h1:AzEZE7N1nc2ysAxjqRsvLT1TD+spS9EDjne0QWXMRIM=
+github.com/bots-go-framework/bots-fw-store v0.10.5/go.mod h1:FordIqmCZu3XXZ8grvep9mRdoxY+QymiZBfY97t0+Rs=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -29,6 +31,8 @@ github.com/strongo/slice v0.3.3 h1:ekhETQiWeH1kyfjZm1InzdZ/1c5SC2z7/i1pK4WrKj4=
 github.com/strongo/slice v0.3.3/go.mod h1:Tymvuhp8oV6T4vswWR4F/JmGFxOcMWFTM5qp0WlV0sk=
 github.com/strongo/slice v0.3.4 h1:AacQ0nRC7t9QHn+7Wj8+0B+8m8K/CJRGRKB22/52sj0=
 github.com/strongo/slice v0.3.4/go.mod h1:Tymvuhp8oV6T4vswWR4F/JmGFxOcMWFTM5qp0WlV0sk=
+github.com/strongo/slice v0.3.5 h1:8qbn5ll6DBf0eIZ2KtQm1xbmKOr5+FgXZIShz3Qg5to=
+github.com/strongo/slice v0.3.5/go.mod h1:Tymvuhp8oV6T4vswWR4F/JmGFxOcMWFTM5qp0WlV0sk=
 github.com/strongo/strongoapp v0.24.3 h1:+5pXWoaeD81BnjIHOYqpdGbK6syeEDV7RTCnBi+ywLI=
 github.com/strongo/strongoapp v0.24.3/go.mod h1:lmqjpbP+aTKJLN0R+M+jwpe6Kf8+t1X30cyc6GlGoW4=
 github.com/strongo/strongoapp v0.25.0 h1:KJyDaD14PIs55S4hw15QrIMbHBPkAor9ezgpOxKRaiE=
@@ -133,6 +137,8 @@ github.com/strongo/validation v0.0.7 h1:gs6YkwPsYtVsepQaQOB+ZF+T0Gu5+nk4ZMND8F85
 github.com/strongo/validation v0.0.7/go.mod h1:YUwoPEItLJd/Bc9X1OCUm03ofhvm3kwZvuihU7/jz58=
 github.com/strongo/validation v0.0.8 h1:LL3FODf1MTOROKa8fHJuwYxiKHcvd1W2Vs0OXc1H46U=
 github.com/strongo/validation v0.0.8/go.mod h1:YUwoPEItLJd/Bc9X1OCUm03ofhvm3kwZvuihU7/jz58=
+github.com/strongo/validation v0.0.9 h1:wO/aExTa4qZorJtQuGlqkTS8vfL4y9WQsCk9cP/nNjU=
+github.com/strongo/validation v0.0.9/go.mod h1:YUwoPEItLJd/Bc9X1OCUm03ofhvm3kwZvuihU7/jz58=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=

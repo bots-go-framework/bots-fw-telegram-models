@@ -16,7 +16,7 @@ import (
 // SetID sets ID
 //func (v *TgChatRecord) SetID(tgBotID string, tgChatID int64) {
 //	v.ID = getChatID(tgBotID, tgChatID) // TODO: Should we migrate to format "id@bot"?
-//	v.Key = dal.NewKeyWithID(TgChatCollection, v.ID)
+//	v.Key = record.NewKeyWithID(TgChatCollection, v.ID)
 //}
 
 //func getChatID(tgBotID string, tgChatID int64) string {

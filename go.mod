@@ -7,7 +7,7 @@ toolchain go1.26.5
 //replace github.com/bots-go-framework/bots-fw-store => ../bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw-store v0.14.0
+	github.com/bots-go-framework/bots-fw-store v0.14.1
 	github.com/strongo/strongoapp v0.31.48
 )
 

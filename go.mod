@@ -8,12 +8,12 @@ toolchain go1.27.1
 
 require (
 	github.com/bots-go-framework/bots-fw-store v0.14.1
-	github.com/strongo/strongoapp v0.31.57
+	github.com/strongo/strongoapp v0.31.58
 )
 
 require (
 	github.com/alexsergivan/transliterator v1.0.1 // indirect
 	github.com/strongo/random v0.0.1 // indirect
-	github.com/strongo/slice v0.3.9 // indirect
-	github.com/strongo/validation v0.0.12 // indirect
+	github.com/strongo/slice v0.3.10 // indirect
+	github.com/strongo/validation v0.0.13 // indirect
 )

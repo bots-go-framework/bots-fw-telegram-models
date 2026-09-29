@@ -6,6 +6,8 @@ github.com/bots-go-framework/bots-fw-store v0.14.0 h1:SRiK8cpe/BYAxk3XMGOKG/P6IN
 github.com/bots-go-framework/bots-fw-store v0.14.0/go.mod h1:0yS6Pg516jHIrIInv+kvWRWxXNGGqR4tlvRua8GfT20=
 github.com/bots-go-framework/bots-fw-store v0.14.1 h1:uo+jEI16A/7oiZzxPdom0q1fXXmc/xOsRYypu3CkHGM=
 github.com/bots-go-framework/bots-fw-store v0.14.1/go.mod h1:0yS6Pg516jHIrIInv+kvWRWxXNGGqR4tlvRua8GfT20=
+github.com/bots-go-framework/bots-fw-store v0.14.2 h1:j/tiJ15/ZaKg5vjcvU4nNotzWMzZPiPdiw33ESTzS+c=
+github.com/bots-go-framework/bots-fw-store v0.14.2/go.mod h1:UcXrzir1gspGM7NAOThs0lP/QHPX/pWe81HK5wy7Ndo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -49,6 +51,8 @@ github.com/strongo/strongoapp v0.31.58 h1:euJXe4sEsEm1IiO8hLrlpcE3pzpJsOYUP7Xc2y
 github.com/strongo/strongoapp v0.31.58/go.mod h1:OBNGexSLAWM46owjTehTmBlkzhv2LOibbXqtWUdASnA=
 github.com/strongo/strongoapp v0.31.59 h1:GFyttyNmXufSnMH/JLIKyGNu6+wG5xw2RoCfYrVlUD8=
 github.com/strongo/strongoapp v0.31.59/go.mod h1:annRLoxivy0gQXjXsKXKNRSHe+AFUgzc0x+Kpei33j0=
+github.com/strongo/strongoapp v0.31.64 h1:B/4RpM0yGaNlOu+4F1lady/JPfGQsigQH1rR0cM7dM4=
+github.com/strongo/strongoapp v0.31.64/go.mod h1:aJmr5zVDerLY4WUo4XqVWzQl/cK/lrHqpru6DHFuSrQ=
 github.com/strongo/validation v0.0.10 h1:DDydmPl6O8YmRmSEtz7VimX6k0Q3Vs1CsUEWqtZg9oc=
 github.com/strongo/validation v0.0.10/go.mod h1:YUwoPEItLJd/Bc9X1OCUm03ofhvm3kwZvuihU7/jz58=
 github.com/strongo/validation v0.0.12 h1:HdJjY+RyjkdCKUILRo+Esbv0oGonGkDbaBiDD2TuBLs=
